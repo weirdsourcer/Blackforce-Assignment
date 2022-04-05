@@ -13,6 +13,11 @@ Where Status != "Activated";
 Select count(*) as "Age_bracket" from User
 Where Age > 18 and Age < 26;
 
+/*List the first 5 Users that registered for an account in the system.*/
+Select * as "Age_bracket" from User
+order by asc
+limit 5
+
 /*All Users that registered for an account last week Thursday*/
 Select * from User
 Where created_dt = 06-01-2020;
