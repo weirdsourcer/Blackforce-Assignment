@@ -9,7 +9,6 @@ Where Department = "Accounting";
 Select count(*) as "Total_No_not_Activated" from User
 Where Status != "Activated";
 
-
 /*The total number of Users that have not activated their account*/
 Select count(*) as "Age_bracket" from User
 Where Age > 18 and Age < 26;
@@ -29,9 +28,8 @@ Where created_dt between 01-01-2020 and 07-01-2020;
 
 /*Query to Update the User whose name is Tim to Timothy.*/
 Update User
-set Name = "Tim"
+Set Name = "Tim"
 Where Name = "Timothy";
-
 
 /*Total Number of Users in each Department.*/
 Select Department, Count(*) as "User Count" from User
